@@ -1,5 +1,18 @@
 #include "rush01.h"
 
+/* 
+We iterate from the top to the bottom and left to right.
+
+In the currect well we try to pace a number from 1 to 4.
+When we try to place the number we validate if it is 
+unique in that row and col.
+
+When a row or a col is filled we validate it by checking 
+the side views. if the side views don't match with the clues 
+we try to place another number in that grid cell.
+
+We check for the next cell
+*/
 int solve(int grid[4][4], int *clues, int row, int col)
 {
   int next_row;

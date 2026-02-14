@@ -1,10 +1,12 @@
 #include "rush01.h"
 
+/* Prints a character */
 void ft_putchar(char c)
 {
   write(1, &c, 1);
 }
 
+/* Prints a string */
 void ft_putstr(char *str)
 {
   int i;
@@ -17,6 +19,7 @@ void ft_putstr(char *str)
   }
 }
 
+/* Prints the grid */
 void print_grid(int grid[4][4])
 {
   int row;

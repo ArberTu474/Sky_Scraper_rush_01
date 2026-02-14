@@ -1,5 +1,8 @@
 #include "rush01.h"
-
+/* 
+Returns the number of visible sky scrapers when you 
+look form the side. 
+*/
 int count_visible(int *line, int size)
 {
   int visible;
